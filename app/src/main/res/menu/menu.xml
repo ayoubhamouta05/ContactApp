@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@id/allContactFragment"
+        android:icon="@drawable/ic_all_contacts"
+        android:title="All Contact" />
+    <item android:id="@id/emailContactFragment"
+        android:icon="@drawable/ic_email_contact"
+        android:title="Email Contact" />
+    <item android:id="@id/phoneContactFragment"
+        android:icon="@drawable/ic_phone_contact"
+        android:title="Phone Contact" />
+
+</menu>

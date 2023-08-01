@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="snackBarError">#E80F0F</color>
+    <color name="snackBarSuccess">#37E80F</color>
+    <color name="fab_background">#D5D9F1</color>
+</resources>

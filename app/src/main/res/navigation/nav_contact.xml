@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_contact"
+    app:startDestination="@id/allContactFragment">
+
+    <fragment
+        android:id="@+id/allContactFragment"
+        android:name="com.example.myapplication.view.fragment.AllContactFragment"
+        android:label="AllContactFragment" >
+        <action
+            android:id="@+id/action_allContactFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_allContactFragment_to_modifyContactFragment"
+            app:destination="@id/modifyContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailContactFragment"
+        android:name="com.example.myapplication.view.fragment.EmailContactFragment"
+        android:label="fragment_email_contact" >
+        <action
+            android:id="@+id/action_emailContactFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_emailContactFragment_to_allContactFragment"
+            app:destination="@id/allContactFragment" />
+        <action
+            android:id="@+id/action_emailContactFragment_to_modifyContactFragment"
+            app:destination="@id/modifyContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneContactFragment"
+        android:name="com.example.myapplication.view.fragment.PhoneContactFragment"
+        android:label="PhoneContactFragment" >
+        <action
+            android:id="@+id/action_phoneContactFragment_to_addContactFragment"
+            app:destination="@id/addContactFragment" />
+        <action
+            android:id="@+id/action_phoneContactFragment_to_allContactFragment"
+            app:destination="@id/allContactFragment" />
+        <action
+            android:id="@+id/action_phoneContactFragment_to_modifyContactFragment"
+            app:destination="@id/modifyContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addContactFragment"
+        android:name="com.example.myapplication.view.fragment.AddContactFragment"
+        android:label="fragment_add_contact"
+        tools:layout="@layout/fragment_add_contact" >
+        <action
+            android:id="@+id/action_addContactFragment_to_allContactFragment"
+            app:destination="@id/allContactFragment" />
+        <action
+            android:id="@+id/action_addContactFragment_to_phoneContactFragment"
+            app:destination="@id/phoneContactFragment" />
+        <action
+            android:id="@+id/action_addContactFragment_to_emailContactFragment"
+            app:destination="@id/emailContactFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/modifyContactFragment"
+        android:name="com.example.myapplication.view.fragment.ModifyContactFragment"
+        android:label="fragment_modify_contact"
+        tools:layout="@layout/fragment_modify_contact" >
+        <argument
+            android:name="contact"
+            app:argType="com.example.myapplication.data.Contact" />
+        <action
+            android:id="@+id/action_modifyContactFragment_to_allContactFragment"
+            app:destination="@id/allContactFragment" />
+    </fragment>
+</navigation>
