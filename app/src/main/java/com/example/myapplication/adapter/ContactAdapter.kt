@@ -26,7 +26,7 @@ import com.example.myapplication.databinding.ItemContactBinding
 import com.example.myapplication.view.activity.MainActivity
 
 
-class ContactAdapter(var viewModel: ContactViewModel) : RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
+class ContactAdapter() : RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
 
     inner class ViewHolder(val binding: ItemContactBinding) : RecyclerView.ViewHolder(binding.root)
 

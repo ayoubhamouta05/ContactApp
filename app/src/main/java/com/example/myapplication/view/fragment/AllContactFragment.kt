@@ -79,9 +79,9 @@ class AllContactFragment : Fragment() {
 
     }
 
-    // todo :this fun move to util class
+
     private fun setupAdapter() {
-        contactAdapter = ContactAdapter(viewModel)
+        contactAdapter = ContactAdapter()
         binding.rvAllContact.apply {
             adapter = contactAdapter
             layoutManager = LinearLayoutManager(requireContext())

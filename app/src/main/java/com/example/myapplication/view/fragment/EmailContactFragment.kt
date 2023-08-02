@@ -71,7 +71,7 @@ class EmailContactFragment : Fragment() {
     }
 
     private fun setupRecyclerView(){
-        contactAdapter = ContactAdapter(viewModel)
+        contactAdapter = ContactAdapter()
         binding.rvEmailContact.apply {
             adapter = contactAdapter
             layoutManager = LinearLayoutManager(requireContext())

@@ -46,7 +46,7 @@ class AddContactFragment : Fragment(), AdapterView.OnItemSelectedListener {
         super.onViewCreated(view, savedInstanceState)
 
         viewModel = (activity as MainActivity).viewModel
-        contactAdapter = ContactAdapter(viewModel)
+        contactAdapter = ContactAdapter()
 
         setupActionBar()
 

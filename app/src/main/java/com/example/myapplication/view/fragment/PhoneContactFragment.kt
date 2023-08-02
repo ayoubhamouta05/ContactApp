@@ -71,7 +71,7 @@ class PhoneContactFragment : Fragment() {
 
     }
     private fun setupRecyclerView(){
-        contactAdapter = ContactAdapter(viewModel)
+        contactAdapter = ContactAdapter()
         binding.rvPhoneContact.apply {
             adapter = contactAdapter
             layoutManager = LinearLayoutManager(requireContext())
