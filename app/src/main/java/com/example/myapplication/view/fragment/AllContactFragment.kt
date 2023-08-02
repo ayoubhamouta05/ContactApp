@@ -2,31 +2,22 @@ package com.example.myapplication.view.fragment
 
 
 import android.app.Dialog
-import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.view.marginBottom
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import com.example.myapplication.view.activity.MainActivity
-
-import com.example.myapplication.adapter.ContactAdapter
-import com.example.myapplication.data.Contact
-
 import com.example.contactapp.viewModel.ContactViewModel
 import com.example.myapplication.R
+import com.example.myapplication.adapter.ContactAdapter
+import com.example.myapplication.data.Contact
 import com.example.myapplication.databinding.DeleteUpdateContactDialogBinding
 import com.example.myapplication.databinding.FragmentAllContactBinding
-import com.example.myapplication.databinding.ItemContactBinding
+import com.example.myapplication.view.activity.MainActivity
 
 
 class AllContactFragment : Fragment() {

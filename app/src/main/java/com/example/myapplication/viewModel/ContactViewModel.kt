@@ -2,11 +2,9 @@ package com.example.contactapp.viewModel
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.myapplication.R
-
 import com.example.myapplication.data.Contact
 import com.example.myapplication.repository.ContactRepository
 import kotlinx.coroutines.launch

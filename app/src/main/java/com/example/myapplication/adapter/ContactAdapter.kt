@@ -1,30 +1,17 @@
 package com.example.myapplication.adapter
 
-import android.app.Activity
-import android.content.Context
+
 import android.content.Intent
 import android.net.Uri
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CheckBox
-import android.widget.Toast
-import androidx.lifecycle.findViewTreeLifecycleOwner
-import androidx.lifecycle.viewModelScope
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.example.contactapp.viewModel.ContactViewModel
 import com.example.myapplication.R
-
-
 import com.example.myapplication.data.Contact
-import com.example.myapplication.databinding.FragmentAddContactBinding
-import com.example.myapplication.databinding.FragmentAllContactBinding
 import com.example.myapplication.databinding.ItemContactBinding
-import com.example.myapplication.view.activity.MainActivity
-
 
 class ContactAdapter() : RecyclerView.Adapter<ContactAdapter.ViewHolder>() {
 
